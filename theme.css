@@ -13,14 +13,41 @@
   --bubblegum: oklch(0.6165 0.2022 0.04);
   --latte: oklch(0.7395 0.1012 76.46);
   --cocoa: oklch(0.4698 0.0467 47.7);
+
+  /* base */
   --background: oklch(0.9818 0.0059 93.36);
 
+  /* text */
   --text-primary: oklch(0.1908 0.0022 106.6);
   --text-secondary: oklch(from var(--text-primary) l c h / 0.7);
+  --text-muted: oklch(from var(--text-primary) l c h / 0.5);
 
-  --code-bg: oklch(from var(--latte) l c h / 0.1);
-  --code-border: oklch(from var(--latte) l c h / 0.2);
-  --accent: var(--blueberry);
+  /* surfaces */
+  --surface: oklch(from var(--background) calc(l - 0.03) c h);
+  --surface-soft: oklch(from var(--background) calc(l - 0.015) c h);
+  --surface-elevated: oklch(1 0 0); /* cards, modals */
+
+  /* borders */
+  --border: oklch(from var(--text-primary) l c h / 0.12);
+  --border-strong: oklch(from var(--text-primary) l c h / 0.25);
+
+  /* interactive */
+  --accent: var(--grape);
+  --accent-soft: oklch(from var(--accent) l c h / 0.12);
+  --accent-muted: oklch(from var(--accent) calc(l + 0.1) c h / 0.6);
+
+  /* code */
+  --code-bg: oklch(from var(--latte) l c h / 0.12);
+  --code-border: oklch(from var(--latte) l c h / 0.25);
+
+  /* states */
+  --success: var(--lime);
+  --warning: var(--banana);
+  --danger: var(--strawberry);
+
+  --success-soft: oklch(from var(--success) l c h / 0.15);
+  --warning-soft: oklch(from var(--warning) l c h / 0.15);
+  --danger-soft: oklch(from var(--danger) l c h / 0.15);
 }
 
 :root {
