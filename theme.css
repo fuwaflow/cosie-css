@@ -50,6 +50,20 @@
   --danger-soft: oklch(from var(--danger) l c h / 0.15);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: oklch(0.2679 0.0036 106.64);
+    --text-primary: oklch(0.9818 0.0054 93.8);
+
+    --surface: oklch(from var(--background) calc(l + 0.03) c h);
+    --surface-soft: oklch(from var(--background) calc(l + 0.05) c h);
+    --surface-elevated: oklch(from var(--background) calc(l + 0.11) c h);
+
+    --border: oklch(from var(--text-primary) l c h / 0.05);
+    --border-strong: oklch(from var(--text-primary) l c h / 0.1);
+  }
+}
+
 :root {
   --font-heading: "Fraunces", serif;
   --font-body: "Fredoka", sans-serif;
