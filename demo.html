@@ -27,17 +27,18 @@
     <header>
       <h1>the cosie.css guide</h1>
       <p>
-        the <code>&lt;header&gt;</code> is the intro to a page, and the
-        <code>&lt;h1&gt;</code> is the most important heading.
+        the <code>&lt;header&gt;</code> is the intro to a page — it gets a
+        bottom border and some breathing room automatically. the
+        <code>&lt;h1&gt;</code> inside is the most important heading.
       </p>
       <nav>
-        <a href="#text">text</a>
+        <a href="#text" aria-current="page">text</a>
         <a href="#media">media</a>
         <a href="#forms">forms</a>
         <a href="#extra">extra</a>
         <span
-          >(this is the <code>&lt;nav&gt;</code> containing
-          <code>&lt;a&gt;</code> links)</span
+          >(this is the <code>&lt;nav&gt;</code> — the first link has
+          <code>aria-current="page"</code> to show the active style)</span
         >
       </nav>
     </header>
@@ -51,10 +52,21 @@
       <section id="text">
         <h2>text tags</h2>
         <p>
-          this is a <code>&lt;p&gt;</code> (paragraph) containing
-          <strong><code>&lt;strong&gt;</code> (bold)</strong> text,
-          <em><code>&lt;em&gt;</code> (italics)</em>, and a
-          <a href="#"><code>&lt;a&gt;</code> (link)</a>!!
+          this is a <code>&lt;p&gt;</code> (paragraph). you can make text
+          <strong><code>&lt;strong&gt;</code> (bold)</strong> or
+          <em><code>&lt;em&gt;</code> (italic)</em>. links like
+          <a href="#"><code>&lt;a&gt;</code></a> use the accent colour. try
+          selecting some text to see the <code>::selection</code> style!
+        </p>
+
+        <p>
+          <strong><code>&lt;strong&gt;</code></strong> uses a slightly lighter
+          weight than a typical bold — enough to stand out without being heavy.
+        </p>
+
+        <p>
+          the <code>&lt;small&gt;</code> tag is for fine print or secondary
+          info: <small>like terms and conditions, or a quiet aside.</small>
         </p>
 
         <blockquote>
@@ -77,15 +89,15 @@
           <summary>
             this is a <code>&lt;details&gt;</code> element (click me!)
           </summary>
-          <p>it can hide and reveal content</p>
-          <p>here's some more content</p>
+          <p>it can hide and reveal content.</p>
+          <p>here's some more content.</p>
         </details>
       </section>
 
       <hr />
       <p>
-        the <code>&lt;hr /&gt;</code> above is a horizontal rule used to
-        separate sections.
+        the <code>&lt;hr /&gt;</code> above is a horizontal rule — cosie styles
+        it as a dashed line to keep things light.
       </p>
 
       <section id="media">
@@ -146,8 +158,8 @@
             />
           </audio>
           <figcaption>
-            the <code>&lt;audio&gt;</code> tag plays sound. click to play a roar
-            of a t-rex.
+            the <code>&lt;audio&gt;</code> tag plays sound. click to hear a
+            t-rex roar.
           </figcaption>
         </figure>
       </section>
@@ -163,35 +175,39 @@
               <code>&lt;fieldset&gt;</code>
             </legend>
 
-            <label for="name"
-              >the <code>&lt;label&gt;</code> tells you what to type:</label
-            >
-            <input type="text" id="name" placeholder="this is an <input>!!" />
+            <div>
+              <label for="name">
+                the <code>&lt;label&gt;</code> tells you what to type:
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="this is an &lt;input&gt;!!"
+              />
+            </div>
 
-            <br /><br />
+            <div>
+              <label for="email">
+                an <code>&lt;input type="email"&gt;</code>:
+              </label>
+              <input type="email" id="email" placeholder="you@example.com" />
+            </div>
+
+            <div>
+              <label for="select"
+                >a <code>&lt;select&gt;</code> dropdown:</label
+              >
+              <select id="select">
+                <option>option one</option>
+                <option>option two</option>
+              </select>
+            </div>
 
             <label>
               <input type="checkbox" checked />
               an <code>&lt;input type="checkbox"&gt;</code> inside a label.
             </label>
-
-            <br /><br />
-
-            <label for="email"
-              >an <code>&lt;input type="email"&gt;</code>:</label
-            >
-            <input type="email" id="email" placeholder="you@example.com" />
-
-            <br /><br />
-
-            <label for="select">a <code>&lt;select&gt;</code> dropdown:</label>
-            <select id="select">
-              <option>option one</option>
-              <option>option two</option>
-            </select>
           </fieldset>
-
-          <br />
 
           <button type="button">i'm a <code>&lt;button&gt;</code>!</button>
         </form>
@@ -220,8 +236,10 @@
         <table>
           <caption>
             this is a
+            <code>&lt;caption&gt;</code>
+            — it labels the
             <code>&lt;table&gt;</code>
-            with a caption
+            below
           </caption>
           <thead>
             <tr>
@@ -236,7 +254,7 @@
             </tr>
             <tr>
               <td>another cell</td>
-              <td>more table data</td>
+              <td>hover a row to see the accent highlight!</td>
             </tr>
           </tbody>
         </table>
@@ -244,8 +262,14 @@
     </main>
 
     <footer>
-      <p>the <code>&lt;footer&gt;</code> is for the very end of the page.</p>
-      <small>the <code>&lt;small&gt;</code> tag is for fine print.</small>
+      <p>
+        the <code>&lt;footer&gt;</code> is for the very end of the page — it
+        gets a top border and muted text colour automatically.
+      </p>
+      <small>
+        the <code>&lt;small&gt;</code> tag is for fine print — like copyright
+        notices or disclaimers.
+      </small>
     </footer>
   </body>
 </html>
