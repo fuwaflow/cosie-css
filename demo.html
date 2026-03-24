@@ -97,6 +97,59 @@
             <code>&lt;img&gt;</code> inside a <code>&lt;figure&gt;</code> tag.
           </figcaption>
         </figure>
+
+        <figure>
+          <img
+            src="https://placehold.co/600x300"
+            alt="Wide placeholder image"
+          />
+          <figcaption>
+            images can have different sizes and aspect ratios.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <picture>
+            <source
+              srcset="https://placehold.co/600x300"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="https://placehold.co/300x200"
+              alt="Responsive image example"
+            />
+          </picture>
+          <figcaption>
+            the <code>&lt;picture&gt;</code> tag lets you swap images based on
+            screen size.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video controls width="100%">
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <figcaption>
+            the <code>&lt;video&gt;</code> tag plays video with built-in
+            controls. click to play a video of a flower.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <audio controls>
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+          <figcaption>
+            the <code>&lt;audio&gt;</code> tag plays sound. click to play a roar
+            of a t-rex.
+          </figcaption>
+        </figure>
       </section>
 
       <hr />

@@ -175,6 +175,37 @@ kbd {
   font-size: 0.85em;
 }
 
+/* media */
+figure {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 8px;
+}
+
+/* caption */
+figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* video */
+video {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
 /* buttons */
 button {
   font-family: var(--font-body);
