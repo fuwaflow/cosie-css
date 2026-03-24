@@ -218,3 +218,40 @@ nav a[aria-current="page"] {
   color: var(--text-primary);
   background-color: var(--surface);
 }
+
+/* tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+}
+
+th {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: lowercase;
+
+  border-bottom: 2px solid var(--border-strong);
+}
+
+td {
+  border-bottom: 1px solid var(--border);
+}
+
+tr:hover td {
+  background-color: var(--accent-soft);
+}
+
+table {
+  border-radius: 12px;
+  overflow: hidden;
+}
