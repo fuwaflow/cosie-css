@@ -72,6 +72,13 @@
           <li><code>&lt;ol&gt;</code> makes an ordered (numbered) list</li>
           <li>it still uses <code>&lt;li&gt;</code> for the items</li>
         </ol>
+
+        <details>
+          <summary>
+            this is a <code>&lt;details&gt;</code> element (click me!)
+          </summary>
+          <p>it can hide and reveal content</p>
+        </details>
       </section>
 
       <hr />
@@ -113,6 +120,21 @@
               <input type="checkbox" checked />
               an <code>&lt;input type="checkbox"&gt;</code> inside a label.
             </label>
+
+            <br /><br />
+
+            <label for="email"
+              >an <code>&lt;input type="email"&gt;</code>:</label
+            >
+            <input type="email" id="email" placeholder="you@example.com" />
+
+            <br /><br />
+
+            <label for="select">a <code>&lt;select&gt;</code> dropdown:</label>
+            <select id="select">
+              <option>option one</option>
+              <option>option two</option>
+            </select>
           </fieldset>
 
           <br />
@@ -142,6 +164,11 @@
 // code blocks!</code></pre>
 
         <table>
+          <caption>
+            this is a
+            <code>&lt;table&gt;</code>
+            with a caption
+          </caption>
           <thead>
             <tr>
               <th><code>&lt;th&gt;</code> (head)</th>

@@ -50,6 +50,53 @@ a {
   text-underline-offset: 0.2em;
 }
 
+/* lists */
+ul,
+ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+/* blockquotes */
+blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  background-color: var(--surface-soft);
+
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+
+  color: var(--text-secondary);
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+/* quote citation */
+blockquote cite {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
 strong {
   font-weight: 550;
 }
