@@ -61,14 +61,6 @@ li {
   margin-bottom: 0.4rem;
 }
 
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
 li::marker {
   color: var(--text-secondary);
 }
@@ -76,11 +68,11 @@ li::marker {
 /* blockquotes */
 blockquote {
   margin: 2rem 0;
-  padding: 1rem 1.2rem;
+  padding: var(--pad-md);
   background-color: var(--surface-soft);
 
   border-left: 4px solid var(--accent);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
 
   color: var(--text-secondary);
 }
@@ -89,7 +81,6 @@ blockquote p {
   margin-bottom: 0.5rem;
 }
 
-/* quote citation */
 blockquote cite {
   display: block;
   font-size: 0.85rem;
@@ -104,18 +95,16 @@ strong {
 /* details */
 details {
   margin: 1.5rem 0;
-  padding: 0.8rem 1rem;
+  padding: var(--pad-sm) var(--pad-md);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background-color: var(--surface-soft);
 }
 
-/* summary */
 summary {
   cursor: pointer;
   font-weight: 500;
   color: var(--text-primary);
-
   list-style: none;
 }
 
@@ -136,13 +125,14 @@ details > *:not(summary) {
   margin-bottom: 0rem;
 }
 
+/* code */
 code,
 samp {
   font-family: var(--font-mono);
   background-color: var(--code-bg);
   color: var(--text-secondary);
   padding: 0.2em 0.4em;
-  border-radius: 6px;
+  border-radius: var(--radius-xs);
   font-size: 0.9em;
 }
 
@@ -150,8 +140,8 @@ pre {
   font-family: var(--font-mono);
   background-color: var(--code-bg);
   color: var(--text-secondary);
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: var(--pad-lg);
+  border-radius: var(--radius-md);
   overflow-x: auto;
   margin: 2rem 0;
   border: 1px solid var(--border);
@@ -170,7 +160,7 @@ kbd {
   color: var(--text-primary);
   border: 1px solid var(--border-strong);
   border-bottom-width: 3px;
-  border-radius: 4px;
+  border-radius: var(--radius-xs);
   padding: 0.1em 0.3em;
   font-size: 0.85em;
 }
@@ -178,32 +168,29 @@ kbd {
 /* media */
 figure {
   margin: 2rem 0;
-  padding: 1rem;
+  padding: var(--pad-md);
   background-color: var(--surface-soft);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
 }
 
-/* image */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
-/* caption */
 figcaption {
   margin-top: 0.8rem;
   font-size: 0.9rem;
   color: var(--text-secondary);
 }
 
-/* video */
+/* video (light touch) */
 video {
-  border-radius: 1rem;
-  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius-md);
 }
 
 /* buttons */
@@ -216,8 +203,8 @@ button {
   color: var(--text-primary);
 
   border: 2px solid var(--border);
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  padding: var(--pad-sm) var(--pad-md);
+  border-radius: var(--radius-sm);
   cursor: pointer;
 
   transition:
@@ -241,11 +228,11 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* forms & inputs */
+/* forms */
 fieldset {
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  padding: var(--pad-lg);
   margin: 2rem 0;
   background-color: var(--surface-soft);
 }
@@ -267,36 +254,38 @@ label {
   font-weight: 500;
 }
 
+input[type="email"],
 input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   font-family: var(--font-body);
   font-size: 1rem;
-  padding: 0.6rem 0.8rem;
+  padding: var(--pad-sm) var(--pad-md);
   background-color: var(--surface-elevated);
   color: var(--text-primary);
   border: 2px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
+
   transition:
     border-color 0.2s ease,
-    outline 0.2s ease,
     background-color 0.2s ease;
 }
 
+input[type="email"]:focus,
 input[type="text"]:focus {
   outline: none;
   border-color: var(--accent);
   background-color: var(--surface);
 }
 
-/* horizontal rule */
+/* hr */
 hr {
   border: none;
   border-top: 2px dashed var(--border);
   margin: 2rem 0;
-  border-radius: 2px;
 }
 
+/* nav */
 nav {
   font-family: var(--font-body);
   display: flex;
@@ -309,8 +298,8 @@ nav a {
   font-size: 0.95rem;
   color: var(--text-secondary);
 
-  padding: 0.3rem 0.8rem;
-  border-radius: 10px;
+  padding: var(--pad-xs) var(--pad-sm);
+  border-radius: var(--radius-sm);
 
   transition:
     color 0.2s ease,
@@ -338,12 +327,14 @@ table {
   border-collapse: collapse;
   margin: 2rem 0;
   font-size: 0.95rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 th,
 td {
   text-align: left;
-  padding: 0.6rem 0.8rem;
+  padding: var(--pad-sm) var(--pad-md);
 }
 
 th {
@@ -352,7 +343,6 @@ th {
   font-weight: 600;
   color: var(--text-secondary);
   text-transform: lowercase;
-
   border-bottom: 2px solid var(--border-strong);
 }
 
@@ -362,9 +352,4 @@ td {
 
 tr:hover td {
   background-color: var(--accent-soft);
-}
-
-table {
-  border-radius: 12px;
-  overflow: hidden;
 }
