@@ -1,9 +1,7 @@
 /* cosie theme.css */
 
-
-
 :root {
-/* accent colours */
+  /* accent colours */
   --strawberry: oklch(0.5378 0.1944 24.71);
   --orange: oklch(0.6972 0.1772 46.22);
   --banana: oklch(0.8459 0.1532 85.77);
@@ -14,4 +12,9 @@
   --bubblegum: oklch(0.6165 0.2022 0.04);
   --latte: oklch(0.7395 0.1012 76.46);
   --cocoa: oklch(0.4698 0.0467 47.7);
+}
+
+:root {
+  --font-body: "Fraunces", serif;
+  --font-mono: "Google Sans Mono", ui-monospace, monospace;
 }

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="cosie.css" />
+
+    <title>cosie.css: the guide!!</title>
+  </head>
+  <body>
+    <header>
+      <h1>the cosie.css guide</h1>
+      <p>
+        the <code>&lt;header&gt;</code> is the intro to a page, and the
+        <code>&lt;h1&gt;</code> is the most important heading.
+      </p>
+      <nav>
+        <a href="#text">text</a>
+        <a href="#media">media</a>
+        <a href="#forms">forms</a>
+        <a href="#extra">extra</a>
+        <span
+          >(this is the <code>&lt;nav&gt;</code> containing
+          <code>&lt;a&gt;</code> links)</span
+        >
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        the <code>&lt;main&gt;</code> tag holds the main content that's unique
+        to this page.
+      </p>
+
+      <section id="text">
+        <h2>text tags</h2>
+        <p>
+          this is a <code>&lt;p&gt;</code> (paragraph) containing
+          <strong><code>&lt;strong&gt;</code> (bold)</strong> text,
+          <em><code>&lt;em&gt;</code> (italics)</em>, and a
+          <a href="#"><code>&lt;a&gt;</code> (link)</a>!!
+        </p>
+
+        <blockquote>
+          the <code>&lt;blockquote&gt;</code> is for longer quotes. inside, we
+          use <code>&lt;cite&gt;</code> for the source.
+          <cite>— cosie person</cite>
+        </blockquote>
+
+        <ul>
+          <li><code>&lt;ul&gt;</code> makes an unordered list</li>
+          <li><code>&lt;li&gt;</code> is each list item</li>
+        </ul>
+
+        <ol>
+          <li><code>&lt;ol&gt;</code> makes an ordered (numbered) list</li>
+          <li>it still uses <code>&lt;li&gt;</code> for the items</li>
+        </ol>
+      </section>
+
+      <hr />
+      <p>
+        the <code>&lt;hr /&gt;</code> above is a horizontal rule used to
+        separate sections.
+      </p>
+
+      <section id="media">
+        <h2>media tags</h2>
+        <figure>
+          <img src="https://placehold.co/150" alt="Placeholder image" />
+          <figcaption>
+            this <code>&lt;figcaption&gt;</code> describes the
+            <code>&lt;img&gt;</code> inside a <code>&lt;figure&gt;</code> tag.
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section id="forms">
+        <h2>form tags</h2>
+        <form>
+          <fieldset>
+            <legend>
+              the <code>&lt;legend&gt;</code> labels this
+              <code>&lt;fieldset&gt;</code>
+            </legend>
+
+            <label for="name"
+              >the <code>&lt;label&gt;</code> tells you what to type:</label
+            >
+            <input type="text" id="name" placeholder="this is an <input>!!" />
+
+            <br /><br />
+
+            <label>
+              <input type="checkbox" checked />
+              an <code>&lt;input type="checkbox"&gt;</code> inside a label.
+            </label>
+          </fieldset>
+
+          <br />
+
+          <button type="button">i'm a <code>&lt;button&gt;</code>!</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <section id="extra">
+        <h2>extra tags</h2>
+        <p>use <code>&lt;code&gt;</code> for <code>inline snippets</code>.</p>
+
+        <pre><code>// the &lt;pre&gt; tag preserves
+// whitespace for
+// code blocks!</code></pre>
+
+        <table>
+          <thead>
+            <tr>
+              <th><code>&lt;th&gt;</code> (head)</th>
+              <th><code>&lt;th&gt;</code> (head)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;td&gt;</code> (cell)</td>
+              <td>part of a <code>&lt;tr&gt;</code> (row)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>the <code>&lt;footer&gt;</code> is for the very end of the page.</p>
+      <small>the <code>&lt;small&gt;</code> tag is for fine print.</small>
+    </footer>
+  </body>
+</html>
