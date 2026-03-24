@@ -101,6 +101,41 @@ strong {
   font-weight: 550;
 }
 
+/* details */
+details {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--surface-soft);
+}
+
+/* summary */
+summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-primary);
+
+  list-style: none;
+}
+
+summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.2s ease;
+  color: var(--text-secondary);
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details > *:not(summary) {
+  margin-top: 0.6rem;
+  margin-bottom: 0rem;
+}
+
 code,
 samp {
   font-family: var(--font-mono);
