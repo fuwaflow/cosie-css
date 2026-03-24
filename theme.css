@@ -1,4 +1,5 @@
 /* cosie theme.css */
+/* all colours must be in oklch */
 
 :root {
   /* accent colours */
@@ -12,6 +13,7 @@
   --bubblegum: oklch(0.6165 0.2022 0.04);
   --latte: oklch(0.7395 0.1012 76.46);
   --cocoa: oklch(0.4698 0.0467 47.7);
+  --background: oklch(0.9818 0.0059 93.36);
 }
 
 :root {
