@@ -24,6 +24,7 @@
 }
 
 :root {
-  --font-body: "Fraunces", serif;
-  --font-mono: "Google Sans Mono", ui-monospace, monospace;
+  --font-heading: "Fraunces", serif;
+  --font-body: "Fredoka", sans-serif;
+  --font-mono: "Google Sans Code", ui-monospace, monospace;
 }

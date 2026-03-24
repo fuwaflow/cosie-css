@@ -14,14 +14,31 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* typography */
 h1,
 h2,
 h3 {
+  font-family: var(--font-heading);
   color: var(--text-primary);
   line-height: 1.2;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 650;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 p {
@@ -33,16 +50,11 @@ a {
   text-underline-offset: 0.2em;
 }
 
-code {
-  font-family: var(--font-mono);
-  background-color: var(--code-bg);
-  color: var(--text-secondary);
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-  font-size: 0.9em;
-  vertical-align: middle;
+strong {
+  font-weight: 550;
 }
 
+code,
 samp {
   font-family: var(--font-mono);
   background-color: var(--code-bg);
@@ -53,6 +65,7 @@ samp {
 }
 
 pre {
+  font-family: var(--font-mono);
   background-color: var(--code-bg);
   color: var(--text-secondary);
   padding: 1.5rem;
@@ -82,6 +95,7 @@ kbd {
 
 /* buttons */
 button {
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 500;
 
@@ -132,6 +146,7 @@ legend {
 }
 
 label {
+  font-family: var(--font-body);
   display: block;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
@@ -141,7 +156,7 @@ label {
 input[type="text"] {
   width: 100%;
   box-sizing: border-box;
-  font-family: inherit;
+  font-family: var(--font-body);
   font-size: 1rem;
   padding: 0.6rem 0.8rem;
   background-color: transparent;
@@ -164,4 +179,39 @@ hr {
   border-top: 2px dashed oklch(from var(--text-primary) l c h / 0.3);
   margin: 2rem 0;
   border-radius: 2px;
+}
+
+nav {
+  font-family: var(--font-body);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+  background-color: oklch(from var(--accent) l c h / 0.08);
+}
+
+nav a:active {
+  transform: scale(0.97);
+}
+
+nav a[aria-current="page"] {
+  color: var(--text-primary);
+  background-color: var(--code-bg);
 }
