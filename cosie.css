@@ -1,5 +1,6 @@
 body {
   background-color: var(--background);
+  color: var(--text-primary);
   font-family: var(--font-body);
 
   max-width: 80ch;
@@ -16,6 +17,7 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--text-primary);
   line-height: 1.2;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -27,13 +29,53 @@ p {
 }
 
 a {
-  color: var(--blueberry);
+  color: var(--accent);
   text-underline-offset: 0.2em;
 }
 
-code,
-pre,
-kbd,
+code {
+  font-family: var(--font-mono);
+  background-color: var(--code-bg);
+  color: var(--text-secondary);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
 samp {
   font-family: var(--font-mono);
+  background-color: var(--code-bg);
+  color: var(--text-secondary);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--code-bg);
+  color: var(--text-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--code-border);
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.95em;
+}
+
+kbd {
+  font-family: var(--font-mono);
+  background-color: white;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  border-bottom-width: 3px;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-size: 0.85em;
 }
