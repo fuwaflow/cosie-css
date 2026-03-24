@@ -59,8 +59,8 @@
     --surface-soft: oklch(from var(--background) calc(l + 0.05) c h);
     --surface-elevated: oklch(from var(--background) calc(l + 0.11) c h);
 
-    --border: oklch(from var(--text-primary) l c h / 0.05);
-    --border-strong: oklch(from var(--text-primary) l c h / 0.1);
+    --border: oklch(from var(--text-primary) l c h / 0.06);
+    --border-strong: oklch(from var(--text-primary) l c h / 0.125);
   }
 }
 
