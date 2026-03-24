@@ -113,3 +113,53 @@ button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
+
+/* forms & inputs */
+fieldset {
+  border: 1px solid var(--code-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+legend {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  color: var(--text-secondary);
+  text-transform: lowercase;
+}
+
+label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--code-border);
+  border-radius: 8px;
+  transition:
+    border-color 0.2s ease,
+    outline 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* horizontal rule */
+hr {
+  margin: 3rem 0;
+  border-radius: 2px;
+}
