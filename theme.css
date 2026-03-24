@@ -14,6 +14,13 @@
   --latte: oklch(0.7395 0.1012 76.46);
   --cocoa: oklch(0.4698 0.0467 47.7);
   --background: oklch(0.9818 0.0059 93.36);
+
+  --text-primary: oklch(0.1908 0.0022 106.6);
+  --text-secondary: oklch(from var(--text-primary) l c h / 0.7);
+
+  --code-bg: oklch(from var(--latte) l c h / 0.1);
+  --code-border: oklch(from var(--latte) l c h / 0.2);
+  --accent: var(--blueberry);
 }
 
 :root {
