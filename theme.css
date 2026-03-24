@@ -15,10 +15,10 @@
   --cocoa: oklch(0.4698 0.0467 47.7);
 
   /* base */
-  --background: oklch(0.9818 0.0059 93.36);
+  --background: oklch(0.98 0.006 93);
 
   /* text */
-  --text-primary: oklch(0.1908 0.0022 106.6);
+  --text-primary: oklch(0.19 0.002 106);
   --text-secondary: oklch(from var(--text-primary) l c h / 0.7);
   --text-muted: oklch(from var(--text-primary) l c h / 0.5);
 
@@ -26,6 +26,9 @@
   --surface: oklch(from var(--background) calc(l - 0.03) c h);
   --surface-soft: oklch(from var(--background) calc(l - 0.015) c h);
   --surface-elevated: oklch(1 0 0); /* cards, modals */
+
+  --footer-bg: oklch(0.21 0.004 106);
+  --footer-text: oklch(0.98 0.006 93);
 
   /* borders */
   --border: oklch(from var(--text-primary) l c h / 0.12);
@@ -52,8 +55,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: oklch(0.2679 0.0036 106.64);
-    --text-primary: oklch(0.9818 0.0054 93.8);
+    --background: oklch(0.26 0.004 107);
+    --text-primary: oklch(0.98 0.005 94);
 
     --surface: oklch(from var(--background) calc(l + 0.03) c h);
     --surface-soft: oklch(from var(--background) calc(l + 0.05) c h);

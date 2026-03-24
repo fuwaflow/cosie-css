@@ -3,15 +3,20 @@ body {
   color: var(--text-primary);
   font-family: var(--font-body);
 
-  max-width: 80ch;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  margin: 0;
+  padding: 0;
 
   line-height: 1.65;
   font-size: 1.15rem;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+body > :not(footer) {
+  width: calc(100% - 2rem);
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* selection */
@@ -215,11 +220,6 @@ audio {
 }
 
 /* layout */
-header,
-footer {
-  padding: var(--pad-md) 0;
-}
-
 header {
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
@@ -227,11 +227,18 @@ header {
 }
 
 footer {
+  --text-primary: var(--footer-text);
+  --text-secondary: oklch(from var(--text-primary) l c h / 0.7);
+  --text-muted: oklch(from var(--text-primary) l c h / 0.5);
   margin-top: 3rem;
   border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
-  color: var(--text-secondary);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: var(--footer-text);
   font-size: 0.95rem;
+  background-color: var(--footer-bg);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* buttons */
