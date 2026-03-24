@@ -160,6 +160,8 @@ input[type="text"]:focus {
 
 /* horizontal rule */
 hr {
-  margin: 3rem 0;
+  border: none;
+  border-top: 2px dashed oklch(from var(--text-primary) l c h / 0.3);
+  margin: 2rem 0;
   border-radius: 2px;
 }
