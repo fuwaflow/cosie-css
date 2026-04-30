@@ -295,6 +295,13 @@ footer {
   padding-right: 1rem;
 }
 
+.footer-inner {
+  width: calc(100% - 4rem);
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* buttons */
 button {
   font-family: var(--font-body);
