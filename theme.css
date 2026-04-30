@@ -90,8 +90,8 @@
 }
 
 :root {
-  --font-variation-h0: "opsz" 48, "SOFT" 100, "WONK" 1;
-  --font-variation-heading: "opsz" 32, "SOFT" 100, "WONK" 1;
+  --font-variation-h0: "opsz" 64, "SOFT" 100, "WONK" 1;
+  --font-variation-heading: "opsz" 48, "SOFT" 100, "WONK" 1;
   --font-variation-body: "wdth" 100, "wght" 400;
   --font-variation-mono: "MONO" 1;
 }
