@@ -614,7 +614,7 @@ tr:hover td {
     background-color 0.2s ease;
 }
 
-.card:hover {
+a.card:hover {
   background-color: var(--surface);
   border-color: var(--border-strong);
 }
