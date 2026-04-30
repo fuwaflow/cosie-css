@@ -84,3 +84,9 @@
   --pad-md: 1rem;
   --pad-lg: 1.5rem;
 }
+
+:root {
+  --font-variation-heading: "opsz" 32, "SOFT" 100, "WONK" 1;
+  --font-variation-body: "wdth" 100, "wght" 400;
+  --font-variation-mono: "MONO" 1;
+}
