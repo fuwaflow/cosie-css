@@ -529,3 +529,19 @@ tr:hover td {
   font-size: 0.85rem;
   margin-top: auto;
 }
+
+@media (min-width: 900px) {
+  main {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  section {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+  hr {
+    break-inside: avoid;
+    break-after: avoid;
+  }
+}
