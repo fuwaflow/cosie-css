@@ -35,8 +35,7 @@ hr {
 /* layout
    ============================================================ */
 
-main,
-.post-body {
+main {
   flex: 1;
   width: 90%;
   max-width: 75rem;
@@ -68,10 +67,9 @@ main > section:first-child > :first-child,
 }
 
 header {
-  width: 90%;
   max-width: 75rem;
   margin-inline: auto;
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
   border-bottom: 2px dashed var(--border);
@@ -729,6 +727,11 @@ tr:hover td {
 
 article {
   margin-inline: auto;
+  flex: 1;
+  width: 90%;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-top: 2rem;
 }
 
 article > header > p,
