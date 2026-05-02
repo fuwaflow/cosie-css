@@ -158,7 +158,7 @@ a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 a[href^="http"]:not(:has(.arrow)):not(:has(img)):not(:has(svg)):not(
@@ -201,7 +201,7 @@ blockquote {
   background-color: var(--surface-soft);
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-lg);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   color: var(--text-secondary);
   position: relative;
 }
@@ -231,7 +231,7 @@ details {
   padding: var(--pad-sm) var(--pad-md);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   background-color: var(--surface-soft);
 }
 
@@ -270,7 +270,7 @@ samp {
   color: var(--text-secondary);
   padding: 0.2em 0.4em;
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 pre {
@@ -282,14 +282,14 @@ pre {
   overflow-x: auto;
   border: 1px solid var(--code-border);
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 pre code {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   font-size: 0.95em;
 }
 
@@ -302,7 +302,7 @@ kbd {
   border: 1px solid var(--border-strong);
   border-bottom-width: 3px;
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 /* media
@@ -314,7 +314,7 @@ figure {
   background-color: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 figcaption {
@@ -328,13 +328,13 @@ img {
   height: auto;
   display: block;
   border-radius: var(--radius-sm);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 video {
   width: 100%;
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 audio {
@@ -357,7 +357,7 @@ nav {
   backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   position: sticky;
   top: 1rem;
   z-index: 100;
@@ -376,7 +376,7 @@ nav a {
   color: var(--text-secondary);
   padding: var(--pad-xs) var(--pad-lg);
   border-radius: var(--radius-sm);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   transition:
     color 0.2s,
     background-color 0.2s,
@@ -420,7 +420,7 @@ button {
   padding: var(--pad-sm) var(--pad-md);
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   cursor: pointer;
   transition:
     background-color 0.2s ease,
@@ -455,7 +455,7 @@ fieldset {
   background-color: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 legend {
@@ -486,7 +486,7 @@ input[type="text"] {
   color: var(--text-primary);
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   transition:
     border-color 0.2s ease,
     background-color 0.2s ease;
@@ -507,7 +507,7 @@ input[type="checkbox"] {
   background-color: var(--surface-elevated);
   border: 2px solid var(--border-strong);
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   cursor: pointer;
   vertical-align: middle;
   position: relative;
@@ -548,7 +548,7 @@ select {
   color: var(--text-primary);
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
@@ -580,7 +580,7 @@ table {
   margin: 2rem 0;
   font-size: 0.95rem;
   border-radius: var(--radius-md);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   overflow: hidden;
 }
 
@@ -626,6 +626,9 @@ tr:hover td {
   margin: 1.5rem 0;
 }
 
+.large {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -634,7 +637,7 @@ tr:hover td {
   background-color: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   text-decoration: none;
   color: inherit;
   transition:
@@ -653,7 +656,7 @@ tr:hover td {
   margin-bottom: 0.5rem;
   object-fit: cover;
   border-radius: calc(var(--radius-xl) - var(--pad-lg));
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 .card-tags {
@@ -672,7 +675,7 @@ tr:hover td {
   background-color: var(--accent-soft);
   padding: 0.15em 0.5em;
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 .card-title {
@@ -713,7 +716,7 @@ tr:hover td {
   min-width: 48px;
   margin: 0;
   border-radius: calc(var(--radius-xl) - var(--pad-sm));
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
   border: none;
   object-fit: cover;
 }
@@ -761,7 +764,7 @@ article > header > h1 {
   background-color: var(--accent-soft);
   padding: 0.2em 0.6em;
   border-radius: var(--radius-xs);
-  corner-shape: superellipse(1.25);
+  corner-shape: superellipse(1.35);
 }
 
 .post-title {
