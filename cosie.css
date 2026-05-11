@@ -38,7 +38,7 @@ hr {
 main {
   flex: 1;
   width: 90%;
-  max-width: 75rem;
+  max-width: 100rem;
   margin-inline: auto;
   padding-top: 2rem;
 }
